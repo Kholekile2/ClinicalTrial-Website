@@ -1,0 +1,323 @@
+/* Basic reset for padding, margin, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles for overall page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Container for all page content */
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px 0; /* Further reduce padding */
+    background-color: #3498db;
+    color: #fff;
+    height: 200px; /* Limit the maximum height */
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.8em; /* Reduce the font size */
+    margin: -14px; /* Minimize margin around header */
+}
+
+header img {
+    width: 100px; /* Further reduce the logo size */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0; /* Reduce vertical margin */
+    
+}
+
+header p {
+    font-size: 0.9em; /* Further reduce the paragraph font size */
+    margin: 10px 0; /* Minimize the margin around the text */
+    margin-top: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Reduce the margin between nav items */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em; /* Reduce the font size of the nav links */
+}
+
+header .button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 6px 12px; /* Further reduce button size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Reduce margin */
+    font-size: 0.9em; /* Adjust font size for the button */
+}
+
+header .button:hover {
+    background-color: #c0392b;
+}
+
+
+/* Hero section */
+#home {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 40px 0;
+}
+
+#home h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#home .button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home .button:hover {
+    background-color: #27ae60;
+}
+
+/* Features section */
+#features {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#features h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+#features ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#features ul li {
+    background-color: #ecf0f1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+}
+
+#features ul li:hover {
+    background-color: #bdc3c7;
+}
+
+/* App Preview section */
+#app-preview {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+#app-preview h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#app-preview video {
+    margin: 20px 0;
+}
+
+/* Flexbox for screenshot gallery */
+#app-preview .screenshot-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between images */
+}
+
+#app-preview figure {
+    margin: 10px;
+    width: 180px; /* Slightly reduced width for better layout */
+    flex: 1 1 auto; /* Allow flex items to grow or shrink */
+    max-width: 100%;
+}
+
+#app-preview figure img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow for visual depth */
+}
+
+#app-preview figure figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9em; /* Slightly smaller text for captions */
+    color: #555; /* Subtle color for captions */
+}
+
+
+/* How it works section */
+.how-it-works {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.how-it-works ol {
+    list-style-position: inside;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.how-it-works ol li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #3498db;
+}
+
+/* About Us section */
+.about-us {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+/* Contact section */
+.contact-us {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-us h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-us ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contact-us ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-us ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    #features ul li,
+    .screenshot-gallery figure {
+        width: 45%;
+    }
+
+    #features ul li {
+        width: 90%;
+    }
+
+    .how-it-works ol {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #features ul li,
+    .screenshot-gallery figure {
+        width: 90%;
+    }
+}
